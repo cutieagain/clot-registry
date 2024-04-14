@@ -1,0 +1,5 @@
+spring:
+    application:
+        name: clot-registry
+server:
+    port: 8484 # nacos 8848

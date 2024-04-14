@@ -1,0 +1,32 @@
+### 8484 获取所有服务实例
+POST http://localhost:8484/findAll?service=cn.cutie.clotrpc.UserService
+Content-Type: application/json
+
+### 8484 注册服务实例
+POST http://localhost:8484/reg?service=cn.cutie.clotrpc.UserService
+Content-Type: application/json
+
+{
+  "scheme": "http",
+  "host": "127.0.0.1",
+  "port": 8081,
+  "context": "clotrpc",
+  "status": false,
+  "parameters": {
+    "env": "dev",
+    "tag": "reg"
+  }
+}
+
+### 8484 取消注册服务
+POST http://localhost:8484/unreg?service=cn.cutie.clotrpc.UserService
+Content-Type: application/json
+
+{
+  "scheme": "http",
+  "host": "127.0.0.1",
+  "port": 8081,
+  "context": "clotrpc"
+}
+
+
